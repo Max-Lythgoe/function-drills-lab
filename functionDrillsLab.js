@@ -106,7 +106,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
+/* expression */
 
 
 
@@ -121,7 +121,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
+/* arrow */
 // declaration
 // expression
 
@@ -132,8 +132,9 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
+const exclaimThree = str => { return str.toUpperCase() + `!!!`}
 
-
+// console.log(exclaimThree(`hey`))
 ////////////////// PROBLEM 9 ////////////////////
 
 /*
@@ -147,7 +148,7 @@ function exclaimFour(str) {
 
 // arrow
 // declaration
-// expression
+/* expression */
 
 
 ////////////////// PROBLEM 10 ////////////////////
@@ -159,8 +160,19 @@ function exclaimFour(str) {
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
+// function nameCheck(name1){
+//   if (name1 === 'Steven') {
+//     return(`What is up Steven?`)
+//   }
+//   else if (name1 === 'Bryan') {
+//     return(`Hey Bryan!`)
+//   }
+//   else {
+//     return(`Cool name, ${name1}`)
+//   }
+// } 
 
+// console.log(nameCheck(`Steven`))
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -172,8 +184,20 @@ function exclaimFour(str) {
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
+// function faveColorFinder(color) {
+//   if (color === `red`) {
+//     return `red is a great color`
+//   } else if (color === `green`) {
+//     return `green is a solid favorite color`
+//   } else if (color === `black`) {
+//     return `so trendy`
+//   } else {
+//     return `you need to evaluate your favorite color choice`
+//   }
+// }
 
+// var colorRating = faveColorFinder(`purple`)
+// console.log(colorRating)
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -183,8 +207,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Call the function, passing in the `namesArr` array (above).
 */
 
-//CODE HERE
+// function printAllNames(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i])}
+// }
 
+// printAllNames(namesArr)
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -194,8 +222,15 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
 */
 
-//CODE HERE
+function thatsOdd(anumber){
+  if (anumber % 2 === 0) {
+    console.log(`That's not odd!`)
+  } else {
+    console.log(`That is odd indeed!`)
+  }
+}
 
+var oddChecker = thatsOdd(4)
 
 ////////////////// PROBLEM 14 ////////////////////
 
