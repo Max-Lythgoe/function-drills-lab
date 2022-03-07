@@ -36,11 +36,11 @@
   Call the function, passing in an argument.
 */
 
-const printName = (name1) => {
-  console.log(`${name1}`)
-}
+// const printName = (name1) => {
+//   console.log(`${name1}`)
+// }
 
-printName(`James`)
+// printName(`James`)
 ////////////////// PROBLEM 4 ////////////////////
 /*
   Create a function called greeting that
@@ -52,12 +52,12 @@ printName(`James`)
   Make sure to call your function and pass in an argument.
 */
 
-function greeting(name) {
-  String(name)
-  console.log(`Hello, ${name}`)
-}
+// function greeting(name) {
+//   String(name)
+//   console.log(`Hello, ${name}`)
+// }
 
-greeting(`Max`)
+// greeting(`Max`)
 ////////////////// PROBLEM 5 ////////////////////
 
 /*
@@ -69,8 +69,11 @@ greeting(`Max`)
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-//CODE HERE
+// const compareNums = (num1, num2) => {
+//   return Math.max(num1, num2)
+// }
 
+// console.log(compareNums(15,4))
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -80,7 +83,14 @@ greeting(`Max`)
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
+// function add(num1, num2){
+//   num1 = +(num1)
+//   num2 = +(num2)
+//   return (num1 + num2)
+// } 
+
+// let sum = add(`1`,8)
+// console.log(sum)
 
 
 ////////////////// PROBLEM 7 ////////////////////
