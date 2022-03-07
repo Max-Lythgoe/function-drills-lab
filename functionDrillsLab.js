@@ -11,10 +11,11 @@
   Call the function.
 */
 
-function helloWorld(){
-console.log(`Hello, World!`)
-}
+// function helloWorld(){
+// console.log(`Hello, World!`)
+// }
 
+// helloWorld()
 
 ////////////////// PROBLEM 2 ////////////////////
 
@@ -22,8 +23,11 @@ console.log(`Hello, World!`)
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
 
-//CODE HERE
+// const jsNinja = () => {
+//     return(`I am a JavaScript ninja!`) 
+// }
 
+// console.log(jsNinja())
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -32,9 +36,11 @@ console.log(`Hello, World!`)
   Call the function, passing in an argument.
 */
 
-//CODE HERE
+const printName = (name1) => {
+  console.log(`${name1}`)
+}
 
-
+printName(`James`)
 ////////////////// PROBLEM 4 ////////////////////
 /*
   Create a function called greeting that
@@ -46,9 +52,12 @@ console.log(`Hello, World!`)
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+function greeting(name) {
+  String(name)
+  console.log(`Hello, ${name}`)
+}
 
-
+greeting(`Max`)
 ////////////////// PROBLEM 5 ////////////////////
 
 /*
