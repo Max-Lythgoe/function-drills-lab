@@ -207,9 +207,9 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Call the function, passing in the `namesArr` array (above).
 */
 
-// function printAllNames(arr) {
-//   for (let i = 0; i < arr.length; i++) {
-//   console.log(arr[i])}
+// function printAllNames(arrone) {
+//   for (let i = 0; i < arrone.length; i++) {
+//   console.log(arrone[i])}
 // }
 
 // printAllNames(namesArr)
@@ -222,15 +222,15 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
 */
 
-function thatsOdd(anumber){
-  if (anumber % 2 === 0) {
-    console.log(`That's not odd!`)
-  } else {
-    console.log(`That is odd indeed!`)
-  }
-}
+// function thatsOdd(anumber){
+//   if (anumber % 2 === 0) {
+//     console.log(`That's not odd!`)
+//   } else {
+//     console.log(`That is odd indeed!`)
+//   }
+// }
 
-var oddChecker = thatsOdd(4)
+// var oddChecker = thatsOdd(4)
 
 ////////////////// PROBLEM 14 ////////////////////
 
@@ -242,8 +242,9 @@ var oddChecker = thatsOdd(4)
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-//CODE HERE
+// const bestMovie = (title) => { return `${title} is the best movie ever!`}
 
+// console.log(bestMovie(`Babydriver`))
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
@@ -256,8 +257,18 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-//CODE HERE
+// const arrayEvaluator = function bigOrSmall(arr) {
+//   answers = []
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 100) {
+//       answers.push(`big`)
+//     } else {
+//       answers.push(`small`)
+//     }
+//   } return(`${answers}`)
+// }
 
+// console.log(arrayEvaluator(bigOrSmallArray))
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
@@ -267,8 +278,16 @@ let loser = 'Glimmer'
   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 */
 
-//CODE HERE
+// const theEliminators = (contestants, loser) => {
+//   for (let i = 0; i < contestants.length; i++) {
+//     if(contestants[i] === loser) {
+//       contestants.splice(i, 1)
+//     }
+//   } return contestants
+// }
 
+// const winners = theEliminators(contestants, loser)
+// console.log(winners)
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
@@ -277,8 +296,11 @@ let sampleString = "Hi, my name is Kylo."
   Invoke the function, passing in the sampleString (above).
 */
 
-//CODE HERE
-
+// function upper(word){
+//   word = word.toUpperCase()
+//   console.log(`${word}`)
+// }
+// upper(sampleString)
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
@@ -291,30 +313,89 @@ let sampleString = "Hi, my name is Kylo."
   return 'must provide a valid email address'
 */
 
+// function emailCheck(email) {
+//   email = String(email)
+//   email = email.trim();
+//   if (email.includes(`@`)) {
+//     console.log(email)
+//     return `email verified`
+//     } else {
+//       console.log(email)
+//       return `must provide a valid email address`
+//     }
+// } 
+
+// console.log(emailCheck(`myemailsldflsdj@gmail.com`))
+
 ////////////////// PROBLEM 19 ////////////////////
 /*
-  Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
-  Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
+  Write a function, naming it whatever you believe to be appropriate, 
+  that buys as many chocolate frogs as possible with a certain amount of gold.
+   Each chocolate frog costs 3 gold. Your function should take in a single parameter, 
+   which is the amount of gold you are willing to spend. Your function should return 
+   a total amount of chocolate frogs you were able to purchase.
+  Create a variable called `totalFrogs` and set it equal to your function invoked, 
+  passing in the amount of gold you are willing to spend.
 */
 
-//CODE HERE
+// const chocoFrog = (gold) => {
+//   return Math.floor(gold / 3)
+// } 
 
+// var totalFrogs = chocoFrog(18)
+
+// console.log(`You can buy ${totalFrogs} frogs.`)
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
   You might have noticed a slight bug in the previous problem. If you were to pass in 4 gold, the function would return to you 1.3333... However, you can't really go to a store and by 1.333 products. You would just be able to purchase 1 product. Re-write the function you used in the previous problem (give it the same name, just add a 2 to the end of it) that fixes this bug. Invoke the function and store the returned value to a variable called `totalFrogs2`.
 */
 
-//CODE HERE
+// I did it right the first time... please see above.
 
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 /*
-  Write a function that takes in an array of numbers as an argument. In the body of the function, write logic to determine if the array is in ascending order. The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, `arrayIsAscending` and set it equal to your function invoked. Use the sample array to test this function.
+  Write a function that takes in an array of numbers as an argument. 
+  In the body of the function, write logic to determine if the array 
+  is in ascending order. The function should return true, if it is sorted 
+  in ascending order, false if it is not. Create a variable, `arrayIsAscending` 
+  and set it equal to your function invoked. Use the sample array to test this function.
 */
 
-//CODE HERE
+// const numarr = (arrsamp) => {
+//   for (let i = 0; i < arrsamp.length; i++) {
+//     arrsamp.sort(function(a,b){arrayIsAscending = true})
+//     console.log(arrayIsAscending)
+//   }
+// }
+
+// function numarr = (arrsamp) => {
+//   for (let i = 0; arrsamp.length; i++)
+// }
+
+// const numarr = arraySamp => {
+//   if(arraySamp.length < 2){
+//      return 'not enough items';
+//   };
+//   let ascending = null;
+//   let nextArr = arraySamp.slice(1);
+//   for(var i = 0; i < nextArr.length; i++) {
+//      if(nextArr[i] === arraySamp[i]){
+//         continue;
+//      }else if(ascending === null) {
+//         ascending = nextArr[i] > arraySamp[i];
+//      }else if (ascending !== nextArr[i] > arraySamp[i]){
+//         return 'unsorted';
+//      };
+//   }
+//   if(ascending === null){
+//      return 'all items are equal';
+//   };
+//   return ascending ? 'ascending' : 'descending';
+// };
+// console.log(numarr(sampleArray));
 
 
 ////////////////// PROBLEM 22 ////////////////////
@@ -335,17 +416,22 @@ function pond() {
 /*
   There are 4 variables above: duck, rubberDuck, sailorDuck and realDuck.
   All within different scopes.
-  Given the functions and variables above, edit the arrays below to contain only the appropriate variable names (as strings).
+  Given the functions and variables above, edit the arrays below to 
+  contain only the appropriate variable names (as strings).
 */
 
-//This array should contain the variable names (as strings) accessible in the global scope.
+//This array should contain the variable names (as strings) 
+// accessible in the global scope.
 let globalScope = []
 
-//This array should contain the variable names (as strings) accessible in the bathroom function.
+//This array should contain the variable names (as strings) 
+// accessible in the bathroom function.
 let bathroomScope = []
 
-//This array should contain the variable names (as strings) accessible in the bathtub function.
+//This array should contain the variable names (as strings) 
+// accessible in the bathtub function.
 let bathtubScope = []
 
-//This array should contain the variable names (as strings) accessible in the pond function.
+//This array should contain the variable names (as strings) 
+// accessible in the pond function.
 let pondScope = []
